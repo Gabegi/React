@@ -12,7 +12,6 @@ dist/
 # Optional cache folders
 .cache/
 
-
 # Logs
 logs
 *.log
