@@ -1,0 +1,88 @@
+import type { Product } from "./product";
+
+export const sampleProducts: Product[] = [
+  {
+    id: 1,
+    name: "Wireless Headphones",
+    description:
+      "Noise-cancelling over-ear headphones with 30-hour battery life.",
+    price: 129.99,
+    pictureUrl: "https://via.placeholder.com/200?text=Headphones",
+    type: "Electronics",
+    brand: "SoundPro",
+    quantityInStock: 25,
+  },
+  {
+    id: 2,
+    name: "Running Shoes",
+    description:
+      "Lightweight shoes for running and training, breathable mesh upper.",
+    price: 79.99,
+    pictureUrl: "https://via.placeholder.com/200?text=Shoes",
+    type: "Footwear",
+    brand: "FleetStep",
+    quantityInStock: 40,
+  },
+  {
+    id: 3,
+    name: "Coffee Maker",
+    description: "12-cup programmable coffee maker with auto shut-off.",
+    price: 49.99,
+    pictureUrl: "https://via.placeholder.com/200?text=Coffee+Maker",
+    type: "Home Appliance",
+    brand: "BrewMaster",
+    quantityInStock: 15,
+  },
+  {
+    id: 4,
+    name: "Yoga Mat",
+    description: "Non-slip mat with extra cushioning for yoga and pilates.",
+    price: 24.99,
+    pictureUrl: "https://via.placeholder.com/200?text=Yoga+Mat",
+    type: "Fitness",
+    brand: "ZenFit",
+    quantityInStock: 60,
+  },
+  {
+    id: 5,
+    name: "Smart Watch",
+    description:
+      "Track fitness, sleep, and heart rate with a stylish smart watch.",
+    price: 199.99,
+    pictureUrl: "https://via.placeholder.com/200?text=Smart+Watch",
+    type: "Electronics",
+    brand: "WristIQ",
+    quantityInStock: 18,
+  },
+  {
+    id: 6,
+    name: "Backpack",
+    description: "Durable and waterproof backpack for everyday use and travel.",
+    price: 39.99,
+    pictureUrl: "https://via.placeholder.com/200?text=Backpack",
+    type: "Accessories",
+    brand: "UrbanPack",
+    quantityInStock: 32,
+  },
+  {
+    id: 7,
+    name: "Desk Lamp",
+    description:
+      "LED desk lamp with adjustable brightness and color temperature.",
+    price: 34.95,
+    pictureUrl: "https://via.placeholder.com/200?text=Desk+Lamp",
+    type: "Office",
+    brand: "LumoLite",
+    quantityInStock: 22,
+  },
+  {
+    id: 8,
+    name: "Bluetooth Speaker",
+    description: "Portable speaker with deep bass and 10-hour playtime.",
+    price: 59.99,
+    pictureUrl: "https://via.placeholder.com/200?text=Speaker",
+    type: "Electronics",
+    brand: "EchoBlitz",
+    quantityInStock: 27,
+  },
+];
