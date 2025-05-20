@@ -4,7 +4,6 @@ import type { defaultProducts } from "../models/defaultProducts";
 function App() {
   return (
     <>
-      {/* <Navbar /> */}
       <ProductList products={defaultProducts} />
     </>
   );

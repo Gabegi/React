@@ -1,5 +1,4 @@
 import type { Product } from "./product";
-import type { Product } from "./product";
 
 export const defaultProducts: Product[] = [
   {
@@ -73,5 +72,16 @@ export const defaultProducts: Product[] = [
     type: "Red Wine",
     brand: "Rhône Valley",
     quantityInStock: 16,
+  },
+  {
+    id: 8,
+    name: "Cornas",
+    description:
+      "A deep, brooding Syrah with intense black fruit, smoke, and spice.",
+    price: 44.99,
+    pictureUrl: "/images/cornas.jpg",
+    type: "Red Wine",
+    brand: "Rhône Valley",
+    quantityInStock: 11,
   },
 ];
