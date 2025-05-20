@@ -46,7 +46,7 @@ export const defaultProducts: Product[] = [
   {
     id: 5,
     name: "Beaumes-de-Venise (Red)",
-    description: "Smooth and velvety, distinct from its sweet Muscat cousin.",
+    description: "Spicy and velvety, distinct from its strong neighbours.",
     price: 25.99,
     pictureUrl: "/images/beaumes.jpg",
     type: "Red Wine",
