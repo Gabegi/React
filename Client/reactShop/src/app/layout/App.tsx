@@ -1,4 +1,4 @@
-import ProductList from "./features/products/ProductList.tsx";
+import ProductList from "../../features/products/ProductList";
 import type { defaultProducts } from "../models/defaultProducts";
 
 function App() {
