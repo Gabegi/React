@@ -84,4 +84,15 @@ export const defaultProducts: Product[] = [
     brand: "Rhône Valley",
     quantityInStock: 11,
   },
+  {
+    id: 9,
+    name: "Crozes-Hermitage",
+    description:
+      "A balanced Syrah showcasing red berries, pepper, and earthy minerality.",
+    price: 38.5,
+    pictureUrl: "/images/crozes.png",
+    type: "Red Wine",
+    brand: "Rhône Valley",
+    quantityInStock: 15,
+  },
 ];
