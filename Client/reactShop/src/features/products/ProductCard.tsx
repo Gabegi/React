@@ -12,19 +12,27 @@ import type { Product } from "../../app/models/product";
 interface Props {
   product: Product;
 }
-
 export default function ProductCard({ product }: Props) {
   return (
     <Card sx={{ height: "100%", display: "flex", flexDirection: "column" }}>
-      <Box sx={{ height: 200, overflow: "hidden" }}>
+      <Box
+        sx={{
+          height: 200,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          overflow: "hidden",
+          backgroundColor: "#f5f5f5",
+        }}
+      >
         <CardMedia
           component="img"
           image={product.pictureUrl}
           alt={product.name}
           sx={{
-            height: "100%",
-            width: "100%",
-            objectFit: "cover",
+            maxHeight: "100%",
+            maxWidth: "100%",
+            objectFit: "contain",
           }}
         />
       </Box>
