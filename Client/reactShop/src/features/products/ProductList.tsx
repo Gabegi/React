@@ -4,10 +4,15 @@ import ProductCard from "./ProductCard";
 interface Props {
   products: Product[];
 }
-
 export default function ProductList({ products }: Props) {
   return (
-    <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem" }}>
+    <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: "repeat(3, 1fr)",
+        gap: "1.5rem",
+      }}
+    >
       {products.map((product) => (
         <ProductCard key={product.id} product={product} />
       ))}
