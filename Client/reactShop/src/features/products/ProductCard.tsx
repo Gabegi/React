@@ -41,7 +41,17 @@ export default function ProductCard({ product }: Props) {
         <Typography variant="h6" gutterBottom>
           {product.name}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
+        <Typography
+          variant="body2"
+          color="text.secondary"
+          sx={{
+            overflow: "hidden",
+            textOverflow: "ellipsis",
+            display: "-webkit-box",
+            WebkitLineClamp: 3,
+            WebkitBoxOrient: "vertical",
+          }}
+        >
           {product.description}
         </Typography>
         <Typography sx={{ mt: 1 }} fontWeight="bold">
