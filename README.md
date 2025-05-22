@@ -1,1 +1,4 @@
 # React app
+
+- Vite
+- MUI
