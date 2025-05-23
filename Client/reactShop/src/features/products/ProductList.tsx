@@ -10,7 +10,7 @@ export default function ProductList({ products }: Props) {
     <div
       style={{
         display: "grid",
-        gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))",
+        gridTemplateColumns: "repeat(3, 1fr)",
         gap: "1.5rem",
         padding: "1rem",
       }}
