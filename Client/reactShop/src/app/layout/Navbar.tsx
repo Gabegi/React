@@ -16,12 +16,12 @@ export default function Navbar() {
           variant="h5"
           sx={{
             fontFamily: "'Cormorant Garamond', serif",
-            fontStyle: "italic", // 👈 makes it elegant
+            fontStyle: "italic",
             fontWeight: 500,
             letterSpacing: 1,
           }}
         >
-          Bacchus Wines
+          Rhone Valley Wines
         </Typography>
       </Toolbar>
     </AppBar>
