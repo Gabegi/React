@@ -21,7 +21,7 @@ export default function Navbar() {
             letterSpacing: 1,
           }}
         >
-          My Wine Shop
+          Bacchus Wines
         </Typography>
       </Toolbar>
     </AppBar>
