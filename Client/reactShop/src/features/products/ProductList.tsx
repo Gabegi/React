@@ -1,3 +1,4 @@
+import { Typography } from "@mui/material";
 import type { Product } from "../../app/models/product";
 import ProductCard from "./ProductCard";
 
@@ -11,11 +12,16 @@ export default function ProductList({ products }: Props) {
         display: "grid",
         gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
         gap: "1.5rem",
+        padding: "1rem",
       }}
     >
-      {products.map((product) => (
-        <ProductCard key={product.id} product={product} />
-      ))}
+      {products.length === 0 ? (
+        <Typography variant="h6">No products found.</Typography>
+      ) : (
+        products.map((product) => (
+          <ProductCard key={product.id} product={product} />
+        ))
+      )}
     </div>
   );
 }
