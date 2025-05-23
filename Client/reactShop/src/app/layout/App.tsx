@@ -1,3 +1,4 @@
+import { Container } from "@mui/material";
 import ProductList from "../../features/products/ProductList";
 import { defaultProducts } from "../models/defaultProducts";
 import Navbar from "./Navbar";
@@ -6,7 +7,9 @@ function App() {
   return (
     <>
       <Navbar />
-      <ProductList products={defaultProducts} />
+      <Container sx={{ marginTop: "80px" }}>
+        <ProductList products={defaultProducts} />
+      </Container>
     </>
   );
 }
