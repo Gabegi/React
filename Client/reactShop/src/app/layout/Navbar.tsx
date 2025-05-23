@@ -21,7 +21,7 @@ export default function Navbar() {
             letterSpacing: 1,
           }}
         >
-          Rhone Valley Wines
+          French Wines from the Rhone Valley
         </Typography>
       </Toolbar>
     </AppBar>
