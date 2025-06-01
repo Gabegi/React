@@ -7,7 +7,7 @@ import {
   Button,
   Box,
 } from "@mui/material";
-import type { Product } from "../../app/models/product";
+import type { Product } from "../../models/product";
 
 interface Props {
   product: Product;

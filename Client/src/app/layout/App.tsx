@@ -1,5 +1,5 @@
 import { Container } from "@mui/material";
-import ProductList from "../../features/products/ProductList";
+import ProductList from "../features/products/ProductList";
 import { defaultProducts } from "../models/defaultProducts";
 import Navbar from "./Navbar";
 
