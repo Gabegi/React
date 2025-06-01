@@ -1,6 +1,16 @@
 import { AppBar, Toolbar, Typography } from "@mui/material";
+import { useEffect } from "react";
 
 export default function Navbar() {
+  // Load Cormorant Garamond if not already available
+  useEffect(() => {
+    const link = document.createElement("link");
+    link.href =
+      "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&display=swap";
+    link.rel = "stylesheet";
+    document.head.appendChild(link);
+  }, []);
+
   return (
     <AppBar
       position="fixed"
@@ -18,10 +28,11 @@ export default function Navbar() {
             fontFamily: "'Cormorant Garamond', serif",
             fontStyle: "italic",
             fontWeight: 500,
-            letterSpacing: 1,
+            letterSpacing: 1.5,
+            fontSize: "2rem",
           }}
         >
-          Crimson Oak Wines
+          Crimson Wines
         </Typography>
       </Toolbar>
     </AppBar>
