@@ -1,16 +1,6 @@
 import { AppBar, Toolbar, Typography } from "@mui/material";
-import { useEffect } from "react";
 
 export default function Navbar() {
-  // Load Cormorant Garamond if not already available
-  useEffect(() => {
-    const link = document.createElement("link");
-    link.href =
-      "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&display=swap";
-    link.rel = "stylesheet";
-    document.head.appendChild(link);
-  }, []);
-
   return (
     <AppBar
       position="fixed"
