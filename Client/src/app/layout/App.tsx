@@ -1,7 +1,7 @@
 import { Container } from "@mui/material";
 import ProductList from "../features/products/ProductList";
 import Navbar from "./Navbar";
-import { Product } from "../models/product";
+import type { Product } from "../models/product";
 import { useEffect, useState } from "react";
 
 function App() {
@@ -25,7 +25,11 @@ function App() {
     <>
       <Navbar />
       <Container sx={{ marginTop: "80px" }}>
-        <ProductList products={defaultProducts} />
+        {loading ? (
+          <p>Loading products...</p>
+        ) : (
+          <ProductList products={products} />
+        )}
       </Container>
     </>
   );
