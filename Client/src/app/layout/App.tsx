@@ -9,7 +9,7 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("https://localhost:7004/api/Product")
+    fetch("https://localhost:7020/api/Product")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch products");
