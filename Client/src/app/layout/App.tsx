@@ -16,9 +16,9 @@ function App() {
         }
         return response.json();
       })
-      .then((data) => setProducts(data))
+      .then((data) => setProducts(data)) // loading succesfully
       .catch((error) => console.error(error))
-      .finally(() => setLoading(false));
+      .finally(() => setLoading(false)); // loading unsuccessfully
   }, []);
 
   return (
