@@ -18,10 +18,11 @@ export default function Navbar() {
             fontFamily: "'Cormorant Garamond', serif",
             fontStyle: "italic",
             fontWeight: 500,
-            letterSpacing: 1,
+            letterSpacing: 1.5,
+            fontSize: "2rem",
           }}
         >
-          Crimson Oak Wines
+          Crimson Wines
         </Typography>
       </Toolbar>
     </AppBar>
