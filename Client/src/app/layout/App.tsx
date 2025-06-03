@@ -9,16 +9,16 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("https://localhost:7004/api/Product")
+    fetch("https://localhost:7020/api/Product")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch products");
         }
         return response.json();
       })
-      .then((data) => setProducts(data))
+      .then((data) => setProducts(data)) // loading succesfully
       .catch((error) => console.error(error))
-      .finally(() => setLoading(false));
+      .finally(() => setLoading(false)); // loading unsuccessfully
   }, []);
 
   return (
@@ -26,7 +26,7 @@ function App() {
       <Navbar />
       <Container sx={{ marginTop: "80px" }}>
         {loading ? (
-          <p>Loading products...</p>
+          <p>Error loading products...</p>
         ) : (
           <ProductList products={products} />
         )}
