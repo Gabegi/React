@@ -26,7 +26,7 @@ function App() {
       <Navbar />
       <Container sx={{ marginTop: "80px" }}>
         {loading ? (
-          <p>Loading products...</p>
+          <p>Error loading products...</p>
         ) : (
           <ProductList products={products} />
         )}
