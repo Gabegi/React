@@ -1,4 +1,31 @@
 import { AppBar, Toolbar, Typography } from "@mui/material";
+import { NavLink } from "react-router-dom";
+
+const midLinks = [
+  {
+    title: "catalog",
+    path: "/catalog",
+  },
+  {
+    title: "about",
+    path: "/about",
+  },
+  {
+    title: "contact",
+    path: "/contact",
+  },
+];
+
+const rightLinks = [
+  {
+    title: "login",
+    path: "/login",
+  },
+  {
+    title: "register",
+    path: "/register",
+  },
+];
 
 export default function Navbar() {
   return (
@@ -13,6 +40,8 @@ export default function Navbar() {
     >
       <Toolbar>
         <Typography
+          component={NavLink}
+          to="/"
           variant="h5"
           sx={{
             fontFamily: "'Cormorant Garamond', serif",
