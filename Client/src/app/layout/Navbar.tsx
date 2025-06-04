@@ -1,4 +1,13 @@
-import { AppBar, Toolbar, Typography } from "@mui/material";
+import { ShoppingCart } from "@mui/icons-material";
+import {
+  AppBar,
+  Badge,
+  IconButton,
+  List,
+  ListItem,
+  Toolbar,
+  Typography,
+} from "@mui/material";
 import { NavLink } from "react-router-dom";
 
 const midLinks = [
@@ -53,6 +62,35 @@ export default function Navbar() {
         >
           Crimson Wines
         </Typography>
+        <List sx={{ display: "flex" }}>
+          {midLinks.map(({ title, path }) => (
+            <ListItem
+              component={NavLink}
+              to={path}
+              key={path}
+              sx={{ color: "inherit", typography: "h6" }}
+            >
+              {title.toUpperCase()}
+            </ListItem>
+          ))}
+        </List>
+        <IconButton size="large" sx={{ color: "inherit" }}>
+          <Badge badgeContent="4" color="secondary">
+            <ShoppingCart />
+          </Badge>
+        </IconButton>
+        <List sx={{ display: "flex" }}>
+          {rightLinks.map(({ title, path }) => (
+            <ListItem
+              component={NavLink}
+              to={path}
+              key={path}
+              sx={{ color: "inherit", typography: "h6" }}
+            >
+              {title.toUpperCase()}
+            </ListItem>
+          ))}
+        </List>
       </Toolbar>
     </AppBar>
   );
