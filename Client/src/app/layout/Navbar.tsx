@@ -58,6 +58,11 @@ export default function Navbar() {
             fontWeight: 500,
             letterSpacing: 1.5,
             fontSize: "2rem",
+            color: "white", // sets the text color to white
+            transition: "color 0.3s ease", // smooth color transition
+            "&:hover": {
+              color: "black", // hover color
+            },
           }}
         >
           Crimson Wines
