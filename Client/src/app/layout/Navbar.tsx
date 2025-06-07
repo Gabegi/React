@@ -51,7 +51,7 @@ export default function Navbar() {
         <Typography
           component={NavLink}
           to="/"
-          variant="h5"
+          variant="h6"
           sx={{
             fontFamily: "'Cormorant Garamond', serif",
             fontStyle: "italic",
