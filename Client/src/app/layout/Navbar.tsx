@@ -7,6 +7,7 @@ import {
   ListItem,
   Toolbar,
   Typography,
+  Box,
 } from "@mui/material";
 import { NavLink } from "react-router-dom";
 
@@ -39,13 +40,14 @@ export default function Navbar() {
     <AppBar
       position="fixed"
       sx={{
-        backgroundColor: "#4B2E2E", // Deep burgundy
-        color: "#F5EBDD", // Soft cream text
+        backgroundColor: "#4B2E2E",
+        color: "#F5EBDD",
         boxShadow: "0 2px 8px rgba(0,0,0,0.2)",
         borderBottom: "1px solid #3a1f1f",
       }}
     >
       <Toolbar>
+        {/* Website title with flexGrow */}
         <Typography
           component={NavLink}
           to="/"
@@ -61,44 +63,50 @@ export default function Navbar() {
             "&:hover": {
               color: "black",
             },
-            flexGrow: 1, // pushes links to the right, creating space
+            flexGrow: 1,
             textDecoration: "none",
           }}
         >
           Crimson Wines
         </Typography>
 
-        <List sx={{ display: "flex" }}>
-          {midLinks.map(({ title, path }) => (
-            <ListItem
-              component={NavLink}
-              to={path}
-              key={path}
-              sx={navLinkStyles}
-            >
-              {title.toUpperCase()}
-            </ListItem>
-          ))}
-        </List>
+        {/* Middle and right links container */}
+        <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
+          {/* Middle links */}
+          <List sx={{ display: "flex" }}>
+            {midLinks.map(({ title, path }) => (
+              <ListItem
+                component={NavLink}
+                to={path}
+                key={path}
+                sx={navLinkStyles}
+              >
+                {title.toUpperCase()}
+              </ListItem>
+            ))}
+          </List>
 
-        <IconButton size="large" sx={{ color: "inherit", ml: 2 }}>
-          <Badge badgeContent={4} color="secondary">
-            <ShoppingCart />
-          </Badge>
-        </IconButton>
+          {/* Right links */}
+          <List sx={{ display: "flex" }}>
+            {rightLinks.map(({ title, path }) => (
+              <ListItem
+                component={NavLink}
+                to={path}
+                key={path}
+                sx={navLinkStyles}
+              >
+                {title.toUpperCase()}
+              </ListItem>
+            ))}
+          </List>
 
-        <List sx={{ display: "flex", ml: 2 }}>
-          {rightLinks.map(({ title, path }) => (
-            <ListItem
-              component={NavLink}
-              to={path}
-              key={path}
-              sx={navLinkStyles}
-            >
-              {title.toUpperCase()}
-            </ListItem>
-          ))}
-        </List>
+          {/* Shopping cart pushed far right by margin-left: auto on Box */}
+          <IconButton size="large" sx={{ color: "inherit" }}>
+            <Badge badgeContent={4} color="secondary">
+              <ShoppingCart />
+            </Badge>
+          </IconButton>
+        </Box>
       </Toolbar>
     </AppBar>
   );
