@@ -17,10 +17,10 @@ import {
 
 export default function ProductDetails() {
   const { id } = useParams();
-  const [product, setProduct] = useState<Product | null>();
+  const [product, setProduct] = useState<Product | null>(null);
 
   useEffect(() => {
-    fetch("https://localhost:7020/api/products/${id}")
+    fetch(`https://localhost:7020/api/products/${id}`)
       .then((response) => response.json())
       .then((data) => setProduct(data));
   }, [id]);
