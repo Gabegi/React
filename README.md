@@ -2,3 +2,5 @@
 
 - Vite
 - MUI
+- React
+- Redux
