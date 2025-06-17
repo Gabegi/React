@@ -20,12 +20,12 @@ export default function ProductDetails() {
   const [product, setProduct] = useState<Product | null>();
 
   useEffect(() => {
-    fetch("https://localhost:5001/api/products/${id}")
+    fetch("https://localhost:7020/api/products/${id}")
       .then((response) => response.json())
       .then((data) => setProduct(data));
   }, [id]);
 
-  if (!product) return <div>Loading...</div>;
+  if (!product) return <div>Could not fetch product details...</div>;
 
   const productDetails = [
     { label: "Name", value: product.name },
