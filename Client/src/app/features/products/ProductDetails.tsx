@@ -41,25 +41,25 @@ export default function ProductDetails() {
 
   return (
     <Grid container spacing={6} maxWidth="lg" sx={{ mx: "auto" }}>
-      <Grid item xs={12} md={6}>
+      <Grid size={6}>
         <img
           src={product?.pictureUrl}
           alt={product?.name ?? "product image"}
           style={{ width: "100%" }}
         />
       </Grid>
-      <Grid item xs={12} md={6}>
+      <Grid size={6}>
         <Typography variant="h3">{product.name}</Typography>
         <Divider sx={{ mb: 2 }} />
         <Typography variant="h4" color="secondary">
           ${(product.price / 100).toFixed(2)}
         </Typography>
         <TableContainer>
-          <Table sx={{ "& td": { fontSize: "1rem" } }}>
+          <Table sx={{ "& td": { fonfsize: "1rem" } }}>
             <TableBody>
               {productDetails.map((detail, index) => (
                 <TableRow key={index}>
-                  <TableCell sx={{ fontWeight: "bold" }}>
+                  <TableCell sx={{ fontweight: "bold" }}>
                     {detail.label}
                   </TableCell>
                   <TableCell>{detail.value}</TableCell>
@@ -69,16 +69,16 @@ export default function ProductDetails() {
           </Table>
         </TableContainer>
         <Grid container spacing={2} marginTop={3}>
-          <Grid item xs={6}>
+          <Grid size={6}>
             <TextField
               variant="outlined"
               type="number"
-              label="Quantity in basket"
+              label="quantity in basket"
               fullWidth
               defaultValue={1}
-            />
+            ></TextField>
           </Grid>
-          <Grid item xs={6}>
+          <Grid size={6}>
             <Button
               sx={{ height: "55px" }}
               color="primary"
