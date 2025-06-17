@@ -2,6 +2,19 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import type { Product } from "../../models/product";
 
+import {
+  Button,
+  Divider,
+  Grid,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableRow,
+  TextField,
+  Typography,
+} from "@mui/material";
+
 export default function ProductDetails() {
   const { id } = useParams();
   const [product, setProduct] = useState<Product | null>();
@@ -23,15 +36,15 @@ export default function ProductDetails() {
   ];
 
   return (
-    <Grid2 container spacing={6} maxWidth="lg" sx={{ mx: "auto" }}>
-      <Grid2 size={6}>
+    <Grid container spacing={6} maxWidth="lg" sx={{ mx: "auto" }}>
+      <Grid size={6}>
         <img
           src={product?.pictureUrl}
           alt={product?.name ?? "product image"}
           style={{ width: "100%" }}
         />
-      </Grid2>
-      <Grid2 size={6}>
+      </Grid>
+      <Grid size={6}>
         <Typography variant="h3">{product.name}</Typography>
         <Divider sx={{ mb: 2 }} />
         <Typography variant="h4" color="secondary">
@@ -51,8 +64,8 @@ export default function ProductDetails() {
             </TableBody>
           </Table>
         </TableContainer>
-        <Grid2 container spacing={2} marginTop={3}>
-          <Grid2 size={6}>
+        <Grid container spacing={2} marginTop={3}>
+          <Grid size={6}>
             <TextField
               variant="outlined"
               type="number"
@@ -60,8 +73,8 @@ export default function ProductDetails() {
               fullWidth
               defaultValue={1}
             ></TextField>
-          </Grid2>
-          <Grid2 size={6}>
+          </Grid>
+          <Grid size={6}>
             <Button
               sx={{ height: "55px" }}
               color="primary"
@@ -71,9 +84,9 @@ export default function ProductDetails() {
             >
               Add to basket
             </Button>
-          </Grid2>
-        </Grid2>
-      </Grid2>
-    </Grid2>
+          </Grid>
+        </Grid>
+      </Grid>
+    </Grid>
   );
 }
