@@ -21,12 +21,9 @@ export default function ProductDetails() {
 
   useEffect(() => {
     fetch(`https://localhost:7020/api/products/${id}`)
-      .then((response) => {
-        if (!response.ok) throw new Error("Network error");
-        return response.json();
-      })
+      .then((response) => response.json())
       .then((data) => setProduct(data))
-      .catch(() => setProduct(null));
+      .catch((error) => console.log(error));
   }, [id]);
 
   if (!product) return <div>Could not fetch product details...</div>;
