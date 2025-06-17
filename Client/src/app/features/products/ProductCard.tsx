@@ -7,6 +7,7 @@ import {
   Button,
   Box,
 } from "@mui/material";
+import { Link } from "react-router-dom";
 import type { Product } from "../../models/product";
 
 interface Props {
