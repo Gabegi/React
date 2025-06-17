@@ -3,9 +3,10 @@ import { useParams } from "react-router-dom";
 import type { Product } from "../../models/product";
 
 import {
+  Box,
   Button,
+  Container,
   Divider,
-  Grid,
   Table,
   TableBody,
   TableCell,
@@ -14,6 +15,7 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
+import { Grid2 } from "@mui/material/Unstable_Grid2";
 
 export default function ProductDetails() {
   const { id } = useParams();
@@ -35,59 +37,78 @@ export default function ProductDetails() {
     { label: "Brand", value: product.brand },
     { label: "Quantity in stock", value: product.quantityInStock },
   ];
-
   return (
-    <Grid container spacing={6} maxWidth="lg" sx={{ mx: "auto" }}>
-      <Grid size={6}>
-        <img
-          src={product?.pictureUrl}
-          alt={product?.name ?? "product image"}
-          style={{ width: "100%" }}
-        />
-      </Grid>
-      <Grid size={6}>
-        <Typography variant="h3">{product.name}</Typography>
-        <Divider sx={{ mb: 2 }} />
-        <Typography variant="h4" color="secondary">
-          ${(product.price / 100).toFixed(2)}
-        </Typography>
-        <TableContainer>
-          <Table sx={{ "& td": { fonfsize: "1rem" } }}>
-            <TableBody>
-              {productDetails.map((detail, index) => (
-                <TableRow key={index}>
-                  <TableCell sx={{ fontweight: "bold" }}>
-                    {detail.label}
-                  </TableCell>
-                  <TableCell>{detail.value}</TableCell>
-                </TableRow>
-              ))}
-            </TableBody>
-          </Table>
-        </TableContainer>
-        <Grid container spacing={2} marginTop={3}>
-          <Grid size={6}>
-            <TextField
-              variant="outlined"
-              type="number"
-              label="quantity in basket"
-              fullWidth
-              defaultValue={1}
-            ></TextField>
-          </Grid>
-          <Grid size={6}>
-            <Button
-              sx={{ height: "55px" }}
-              color="primary"
-              size="large"
-              variant="contained"
-              fullWidth
-            >
-              Add to basket
-            </Button>
-          </Grid>
-        </Grid>
-      </Grid>
-    </Grid>
+    <Container maxWidth="lg">
+      <Grid2 container spacing={6} sx={{ mx: "auto" }}>
+        <Grid2 item xs={12} md={6}>
+          <Box
+            sx={{
+              width: "100%",
+              height: 400,
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              backgroundColor: "#f5f5f5",
+              overflow: "hidden",
+            }}
+          >
+            <img
+              src={product?.pictureUrl}
+              alt={product?.name ?? "product image"}
+              style={{
+                maxWidth: "100%",
+                maxHeight: "100%",
+                objectFit: "contain",
+                padding: "10px",
+              }}
+            />
+          </Box>
+        </Grid2>
+
+        <Grid2 item xs={12} md={6}>
+          <Typography variant="h3">{product.name}</Typography>
+          <Divider sx={{ mb: 2 }} />
+          <Typography variant="h4" color="secondary">
+            ${product.price.toFixed(2)}
+          </Typography>
+          <TableContainer>
+            <Table sx={{ "& td": { fontSize: "1rem" } }}>
+              <TableBody>
+                {productDetails.map((detail, index) => (
+                  <TableRow key={index}>
+                    <TableCell>
+                      <Typography fontWeight="bold">{detail.label}</Typography>
+                    </TableCell>
+                    <TableCell>{detail.value}</TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+          </TableContainer>
+          <Grid2 container spacing={2} marginTop={3}>
+            <Grid2 item xs={6}>
+              <TextField
+                variant="outlined"
+                type="number"
+                label="Quantity in basket"
+                fullWidth
+                defaultValue={1}
+              />
+            </Grid2>
+            <Grid2 item xs={6}>
+              <Button
+                sx={{ height: "55px" }}
+                color="primary"
+                size="large"
+                variant="contained"
+                fullWidth
+              >
+                Add to basket
+              </Button>
+            </Grid2>
+          </Grid2>
+        </Grid2>
+      </Grid2>
+    </Container>
   );
 }
