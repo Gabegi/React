@@ -7,6 +7,7 @@ import {
   Button,
   Container,
   Divider,
+  Grid,
   Table,
   TableBody,
   TableCell,
@@ -15,7 +16,6 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import { Grid2 } from "@mui/material/Unstable_Grid2";
 
 export default function ProductDetails() {
   const { id } = useParams();
@@ -39,8 +39,8 @@ export default function ProductDetails() {
   ];
   return (
     <Container maxWidth="lg">
-      <Grid2 container spacing={6} sx={{ mx: "auto" }}>
-        <Grid2 item xs={12} md={6}>
+      <Grid container spacing={6} sx={{ mx: "auto" }}>
+        <Grid item xs={12} md={6}>
           <Box
             sx={{
               width: "100%",
@@ -63,9 +63,9 @@ export default function ProductDetails() {
               }}
             />
           </Box>
-        </Grid2>
+        </Grid>
 
-        <Grid2 item xs={12} md={6}>
+        <Grid item xs={12} md={6}>
           <Typography variant="h3">{product.name}</Typography>
           <Divider sx={{ mb: 2 }} />
           <Typography variant="h4" color="secondary">
@@ -85,8 +85,8 @@ export default function ProductDetails() {
               </TableBody>
             </Table>
           </TableContainer>
-          <Grid2 container spacing={2} marginTop={3}>
-            <Grid2 item xs={6}>
+          <Grid container spacing={2} marginTop={3}>
+            <Grid item xs={6}>
               <TextField
                 variant="outlined"
                 type="number"
@@ -94,8 +94,8 @@ export default function ProductDetails() {
                 fullWidth
                 defaultValue={1}
               />
-            </Grid2>
-            <Grid2 item xs={6}>
+            </Grid>
+            <Grid item xs={6}>
               <Button
                 sx={{ height: "55px" }}
                 color="primary"
@@ -105,10 +105,10 @@ export default function ProductDetails() {
               >
                 Add to basket
               </Button>
-            </Grid2>
-          </Grid2>
-        </Grid2>
-      </Grid2>
+            </Grid>
+          </Grid>
+        </Grid>
+      </Grid>
     </Container>
   );
 }
