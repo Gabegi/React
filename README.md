@@ -4,4 +4,4 @@
 - REST APIs
 - Vite
 - MUI
-
+- Redux, RTK Query
