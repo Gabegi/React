@@ -1,6 +1,7 @@
 # React app
 
+- .NET
 - Vite
 - MUI
 - React
-- Redux
+- Redux, RTK Query, Redux Dev tools
