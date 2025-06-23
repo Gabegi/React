@@ -4,7 +4,7 @@
 - Vite
 - MUI
 - React
-- Redux, RTK Query, Redux Dev tools
+- Redux, RTK Query
 - EF Core
 - REST APIs
 
