@@ -36,14 +36,13 @@ export default function AboutPage() {
             margin: 0,
           }}
         >
-          Crimson Wines is a family-owned winery located in the heart of the
+          Crimson Wines is a family-owned winery located in the heart of
           Provence.
           <br />
           We are passionate about wine and we are committed to offering you the
           best wines.
           <br />
-          We are located in the heart of the Provence, in the village of
-          Cairanne.
+          We are located in the village of Gigondas.
           <br />
           We are open from Monday to Saturday from 10am to 6pm.
         </h1>
