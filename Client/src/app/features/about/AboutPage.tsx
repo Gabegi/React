@@ -36,11 +36,16 @@ export default function AboutPage() {
             margin: 0,
           }}
         >
-          12 Rue des Vignerons, 13100 Aix-en-Provence, France
+          Crimson Wines is a family-owned winery located in the heart of the
+          Provence.
           <br />
-          Tél: +33 4 42 00 00 00
+          We are passionate about wine and we are committed to offering you the
+          best wines.
           <br />
-          Email: contact@crimsonwines.fr
+          We are located in the heart of the Provence, in the village of
+          Cairanne.
+          <br />
+          We are open from Monday to Saturday from 10am to 6pm.
         </h1>
       </div>
     </div>
