@@ -1,0 +1,16 @@
+.about-background {
+  min-height: 100vh;
+  background-image: url("/images/cairanne.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-centered-text {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
