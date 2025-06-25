@@ -43,7 +43,6 @@ C:\Users\lelyg\Desktop\code\React\API\bin\Debug\net9.0\System.Composition.Conven
 C:\Users\lelyg\Desktop\code\React\API\bin\Debug\net9.0\System.Composition.Hosting.dll
 C:\Users\lelyg\Desktop\code\React\API\bin\Debug\net9.0\System.Composition.Runtime.dll
 C:\Users\lelyg\Desktop\code\React\API\bin\Debug\net9.0\System.Composition.TypedParts.dll
-C:\Users\lelyg\Desktop\code\React\API\bin\Debug\net9.0\System.Text.Json.dll
 C:\Users\lelyg\Desktop\code\React\API\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
 C:\Users\lelyg\Desktop\code\React\API\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
 C:\Users\lelyg\Desktop\code\React\API\bin\Debug\net9.0\es\Microsoft.CodeAnalysis.resources.dll
@@ -142,12 +141,6 @@ C:\Users\lelyg\Desktop\code\React\API\obj\Debug\net9.0\scopedcss\bundle\API.styl
 C:\Users\lelyg\Desktop\code\React\API\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\lelyg\Desktop\code\React\API\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\lelyg\Desktop\code\React\API\obj\Debug\net9.0\staticwebassets.build.endpoints.json
-C:\Users\lelyg\Desktop\code\React\API\obj\Debug\net9.0\staticwebassets\msbuild.API.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\lelyg\Desktop\code\React\API\obj\Debug\net9.0\staticwebassets\msbuild.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-C:\Users\lelyg\Desktop\code\React\API\obj\Debug\net9.0\staticwebassets\msbuild.build.API.props
-C:\Users\lelyg\Desktop\code\React\API\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.API.props
-C:\Users\lelyg\Desktop\code\React\API\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.API.props
-C:\Users\lelyg\Desktop\code\React\API\obj\Debug\net9.0\staticwebassets.pack.json
 C:\Users\lelyg\Desktop\code\React\API\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\lelyg\Desktop\code\React\API\obj\Debug\net9.0\API.csproj.Up2Date
 C:\Users\lelyg\Desktop\code\React\API\obj\Debug\net9.0\API.dll
@@ -155,3 +148,8 @@ C:\Users\lelyg\Desktop\code\React\API\obj\Debug\net9.0\refint\API.dll
 C:\Users\lelyg\Desktop\code\React\API\obj\Debug\net9.0\API.pdb
 C:\Users\lelyg\Desktop\code\React\API\obj\Debug\net9.0\API.genruntimeconfig.cache
 C:\Users\lelyg\Desktop\code\React\API\obj\Debug\net9.0\ref\API.dll
+C:\Users\lelyg\Desktop\code\React\API\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\lelyg\Desktop\code\React\API\obj\Debug\net9.0\rjimswa.dswa.cache.json
+C:\Users\lelyg\Desktop\code\React\API\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+C:\Users\lelyg\Desktop\code\React\API\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+C:\Users\lelyg\Desktop\code\React\API\obj\Debug\net9.0\staticwebassets.build.json.cache
