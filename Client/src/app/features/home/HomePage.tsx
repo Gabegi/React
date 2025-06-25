@@ -4,35 +4,41 @@ export default function HomePage() {
   return (
     <div
       style={{
+        position: "relative",
+        width: "100vw",
+        height: "100vh",
+        minHeight: "100vh",
+        backgroundImage: "url('/public/images/vineyard.png')", // Replace this URL as needed
+        backgroundSize: "cover",
+        backgroundPosition: "center",
         display: "flex",
-        flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        minHeight: "60vh",
-        textAlign: "center",
+        overflow: "hidden",
       }}
     >
-      <h1
+      <div
         style={{
-          fontFamily: "'Playfair Display', serif",
-          fontStyle: "italic",
-          fontSize: "1.5rem",
-          fontWeight: 400,
-          letterSpacing: "0.03em",
+          background: "rgba(255,255,255,0.7)",
+          padding: "2rem 3rem",
+          borderRadius: "12px",
+          boxShadow: "0 4px 24px rgba(0,0,0,0.15)",
+          textAlign: "center",
         }}
       >
-        Welcome to Crimson Wines, where passion blends into wine
-      </h1>
-      <img
-        src="/public/images/your-image.png" // Replace this URL as needed
-        alt="Crimson Wines"
-        style={{
-          marginTop: "2rem",
-          maxWidth: "400px",
-          width: "100%",
-          borderRadius: "8px",
-        }}
-      />
+        <h1
+          style={{
+            fontFamily: "'Playfair Display', serif",
+            fontStyle: "italic",
+            fontSize: "1.5rem",
+            fontWeight: 400,
+            letterSpacing: "0.03em",
+            margin: 0,
+          }}
+        >
+          Welcome to Crimson Wines, where passion blends into wine
+        </h1>
+      </div>
     </div>
   );
 }
