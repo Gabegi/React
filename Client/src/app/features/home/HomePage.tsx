@@ -9,7 +9,7 @@ export default function HomePage() {
         height: "100vh",
         minHeight: "100vh",
         backgroundImage: "url('/public/images/vineyard.png')", // Replace this URL as needed
-        backgroundSize: "cover",
+        backgroundSize: "110%",
         backgroundPosition: "center",
         display: "flex",
         alignItems: "center",
